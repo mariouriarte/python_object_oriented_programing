@@ -1,9 +1,11 @@
 from typing import Optional
 
+# abstract class
 class Formatter:
     def format(self, string: str) -> None:
         pass
 
+# class definition into a function
 def format_string(string: str, formatter: Optional[Formatter] = None) -> str:
     """
     Format a string using the formatter object, which
