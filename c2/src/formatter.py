@@ -1,9 +1,11 @@
 from typing import Optional
 
+# abstract class
 class Formatter:
-    def format(self, string: str) -> None:
+    def format(self, string: str) -> str:
         pass
 
+# class definition into a function
 def format_string(string: str, formatter: Optional[Formatter] = None) -> str:
     """
     Format a string using the formatter object, which
@@ -20,7 +22,7 @@ def format_string(string: str, formatter: Optional[Formatter] = None) -> str:
 
     return formatter.format(string)
 
-def main():
+def main() -> None:
     hello = "hello world, how are you today?"
     print(f" input: {hello}")
     print(f" output: {format_string(hello)}")
