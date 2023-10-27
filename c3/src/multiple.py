@@ -1,6 +1,6 @@
 from built_ins.contact import Contact
 
-class Protocol():
+class Protocol:
     email: str
 
 class Emailable(Protocol):
