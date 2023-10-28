@@ -1,8 +1,12 @@
 from pathlib import Path
+from typing import Protocol
+
+class Playable(Protocol):
+    pass
 
 class AudioFile:
     ext: str
-    def __init__(self, filepath: Path) -> None:        
+    def __init__(self, filepath: Path) -> None:
         if not filepath.suffix == self.ext:
             raise ValueError("Invalid file format")
         self.filepath = filepath
