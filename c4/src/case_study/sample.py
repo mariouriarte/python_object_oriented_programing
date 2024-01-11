@@ -1,5 +1,6 @@
 from typing import Optional
 
+
 class Sample:
     "Sample petalo"
 
@@ -36,4 +37,4 @@ class Sample:
             f"species={self.species!r}"
             f"{classification}"
             f")"
-    )
+        )

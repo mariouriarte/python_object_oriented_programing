@@ -1,8 +1,12 @@
+from typing import (
+    cast,
+    Optional,
+    Iterable
+)
+import datetime
 from sample import Sample
 import domain.specie_domain as specie
 from exception.invalid_sample_error import InvalidSampleError
-from typing import cast, Optional, Iterable
-import datetime
 
 
 class KnownSample(Sample):
