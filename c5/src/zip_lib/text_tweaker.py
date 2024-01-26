@@ -1,9 +1,10 @@
 from pathlib import Path
 import re
-from zip_processor import ZipProcessor
+# from zip_processor import ZipProcessor
+from zip_processor_copy_file import ZipProcessorCopyFile
 
 
-class TextTweaker(ZipProcessor):
+class TextTweaker(ZipProcessorCopyFile):
     def __init__(self, archive: Path) -> None:
         super().__init__(archive)
         self.find: str
@@ -18,6 +19,7 @@ class TextTweaker(ZipProcessor):
         input_text = extracted.read_text()
         output_text = re.sub(self.find, self.replace, input_text)
         extracted.write_text(output_text)
+
 
 if __name__ == "__main__":
     sample_zip = Path(
