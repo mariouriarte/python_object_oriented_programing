@@ -6,7 +6,7 @@ class Domain(Set[str]):
             return value
         raise ValueError(f"invalid {value!r}")
 
-species = Domain({
+species_variable_iniciada = Domain({
     "Iris-setosa",
     "Iris-versicolour",
     "Iris-virginica"})

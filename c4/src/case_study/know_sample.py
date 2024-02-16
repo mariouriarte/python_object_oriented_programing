@@ -27,7 +27,7 @@ class KnownSample(Sample):
             petal_width=petal_width,
         )
         # self.species = species
-        self.species = specie.species.validate(species)
+        self.species = specie.species_variable_iniciada.validate(species)
 
     def __repr__(self) -> str:
         return (
