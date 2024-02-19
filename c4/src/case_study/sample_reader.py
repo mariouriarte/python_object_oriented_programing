@@ -9,16 +9,16 @@ class SampleReader:
     """
     See iris.names for attribute ordering in bezdekIris.data file
     """
-    
+
     target_class = Sample
     header = [
         "sepal_length", "sepal_width",
         "petal_length", "petal_width", "class"
     ]
-    
+
     def __init__(self, source: Path) -> None:
         self.source = source
-        
+
     def sample_iter(self) -> Iterator[Sample]:
         target_class = self.target_class
         with self.source.open() as source_file:
@@ -34,4 +34,3 @@ class SampleReader:
                 except ValueError as ex:
                     raise BadSampleRow(f"Invalid {row!r}") from ex
                 yield sample
-                
