@@ -14,3 +14,4 @@ if __name__ == '__main__':
     # x = Wav()
     x = Ogg()
     print(x)
+    x.asd()
