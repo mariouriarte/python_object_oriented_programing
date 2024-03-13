@@ -9,7 +9,6 @@ class Stock:
     high: float = 0.0
     low: float = 0.0
 
-
 class StockOrdinary:
     def __init__(self, name: str, current: float, high: float, low: float) -> None:
         self.name = name
@@ -49,3 +48,6 @@ stock_ordered3 = StockOrdered("GOOG", 1728.28, high=1733.18, low=1666.33)
 print(stock_ordered1 < stock_ordered2)
 print(stock_ordered1 > stock_ordered2)
 pprint(sorted([stock_ordered1, stock_ordered2, stock_ordered3]))
+
+# asd = {s: "a"}
+# print(hash(s))

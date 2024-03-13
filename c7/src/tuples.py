@@ -55,3 +55,5 @@ t = ("Relayer", ["Gates of Delirium", "Sound Chaser"])
 t[1].append("To Be Over")
 print(t)
 # hash(t)
+
+# asd = {s2: 2}
