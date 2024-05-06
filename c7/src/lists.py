@@ -35,10 +35,12 @@ class MultiItem:
     def datetime(self) -> datetime.datetime:
         if self.data_source == "Local":
             return datetime.datetime.fromtimestamp(
-            cast(float, self.timestamp))
+                cast(float, self.timestamp)
+            )
         else:
             return datetime.datetime.fromisoformat(
-            cast(str, self.creation_date))
+                cast(str, self.creation_date)
+            )
 
     def __lt__(self, other: Any) -> bool:
         if self.data_source == "Local":
@@ -58,7 +60,6 @@ class MultiItem:
                 cast(str, other.creation_date)
             )
         return self_datetime < other_datetime
-
 
 
 mi_0 = MultiItem("Local", 1607280522.68012, None, "Some File", "etc. 0")
