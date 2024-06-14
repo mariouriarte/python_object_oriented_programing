@@ -1,5 +1,6 @@
 import math
 
+
 class Point:
     '''Represent a two dimension coordinates'''
 
@@ -18,6 +19,7 @@ class Point:
     def calculate_distance(self, other: "Point") -> float:
         '''Calculate the distance betwen two points'''
         return math.hypot(self.x - other.x, self.y - other.y)
+
 
 def main() -> None:
     p1 = Point(5, 4)
@@ -50,6 +52,7 @@ def main() -> None:
     assert point2.calculate_distance(point1) == point1.calculate_distance(point2)
     point1.move(3, 4)
     print(point1.calculate_distance(point2))
+
 
 if __name__ == "__main__":
     main()
