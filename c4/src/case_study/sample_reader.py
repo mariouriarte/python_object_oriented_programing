@@ -1,4 +1,4 @@
-from sample import Sample
+from c4.src.case_study.model.sample import Sample
 from pathlib import Path
 from typing import Iterator
 import csv
