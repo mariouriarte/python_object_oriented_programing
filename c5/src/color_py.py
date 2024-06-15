@@ -6,7 +6,6 @@ class Color_VP:
         self._name: str = None
         self._set_name(name)
 
-
     def _set_name(self, name: str) -> None:
         if not name:
             raise ValueError(f"Invalid name {name!r}")

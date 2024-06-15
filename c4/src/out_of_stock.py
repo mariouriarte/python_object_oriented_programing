@@ -3,11 +3,14 @@ class ItemType:
         self.name = name
         self.on_hand = 0
 
+
 class OutOfStock(Exception):
     pass
 
+
 class InvalidItemType(Exception):
     pass
+
 
 class Inventory:
     def __init__(self, stock: list[ItemType]) -> None:
@@ -42,6 +45,7 @@ class Inventory:
             return 42
         else:
             raise InvalidItemType(item_type)
+
 
 widget = ItemType("Widget")
 gadget = ItemType("Gadget")
