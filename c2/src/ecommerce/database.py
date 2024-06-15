@@ -6,7 +6,11 @@ class Database:
 
     def __init__(self, connection: Optional[str] = None) -> None:
         """Create a connection to a database"""
+        print("Create a Database")
         pass
+
+
+db: Optional[Database] = None
 
 
 # database = Database("path/to/data")

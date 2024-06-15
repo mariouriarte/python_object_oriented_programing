@@ -1,4 +1,6 @@
 from __future__ import annotations
+
+
 # from typing import List
 
 class ContactList(list["Contact"]):
@@ -9,7 +11,8 @@ class ContactList(list["Contact"]):
                 matching_contacts.append(contact)
         return matching_contacts
 
-class Contact():
+
+class Contact:
     # all_contacts: List["Contact"] = []
     all_contacts = ContactList()
 
@@ -23,4 +26,4 @@ class Contact():
             f"{self.__class__.__name__}("
             f"{self.name!r}, {self.email!r}"
             f")"
-            )
+        )

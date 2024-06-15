@@ -2,13 +2,13 @@ import math
 
 
 class Point:
-    '''Represent a two dimension coordinates'''
+    """Represent a two dimension coordinates"""
 
     def __init__(self, x: float, y: float) -> None:
         self.move(x, y)
 
     def move(self, x: float, y: float) -> None:
-        '''Moves cordinates'''
+        """Moves coordinates"""
         self.x = x
         self.y = y
 
@@ -17,7 +17,7 @@ class Point:
         self.move(0, 0)
 
     def calculate_distance(self, other: "Point") -> float:
-        '''Calculate the distance betwen two points'''
+        """Calculate the distance between two points"""
         return math.hypot(self.x - other.x, self.y - other.y)
 
 
