@@ -1,5 +1,5 @@
 from typing import Optional
-from sample import Sample
+from c4.src.case_study.model.sample import Sample
 import domain.specie_domain as specie
 from exception.invalid_sample_error import InvalidSampleError
 from model.enum_purpose import Purpose

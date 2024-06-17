@@ -4,19 +4,20 @@ from typing import (
 )
 from know_sample import KnownSample
 
+
 class TestingKnownSample(KnownSample):
     """Testing data. A classifier can assign a species, which may or may not be correct."""
 
     def __init__(
-        self,
-        /,
-        species: str,
-        sepal_length: float,
-        sepal_width: float,
-        petal_length: float,
-        petal_width: float,
-        purpose: int,
-        classification: Optional[str] = None,
+            self,
+            /,
+            species: str,
+            sepal_length: float,
+            sepal_width: float,
+            petal_length: float,
+            petal_width: float,
+            purpose: int,
+            classification: Optional[str] = None,
     ) -> None:
         super().__init__(
             species=species,
@@ -46,4 +47,3 @@ class TestingKnownSample(KnownSample):
     @classmethod
     def from_dict(cls, row: dict[str, str]) -> "TestingKnownSample":
         return cast(TestingKnownSample, super().from_dict(row))
-
