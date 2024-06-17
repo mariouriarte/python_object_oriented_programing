@@ -13,12 +13,6 @@ def get_pages(*links: str) -> None:
         print(f"Create {target} from {link!r}")
 
 
-get_pages()
-get_pages('https://www.archlinux.org')
-get_pages('https://www.archlinux.org',
-          'https://dusty.phillips.codes', 'https://itmaybeahack.com')
-
-
 class Options(Dict[str, Any]):
     default_options: dict[str, Any] = {
         "port": 21,
@@ -32,6 +26,13 @@ class Options(Dict[str, Any]):
         super().__init__(self.default_options)
         self.update(kwargs)
 
-options = Options(username="dusty", password="Hunter2", debug=True)
-pprint(options)
-print(options['debug'])
+
+if __name__ == "__main__":
+    get_pages()
+    get_pages('https://www.archlinux.org')
+    get_pages('https://www.archlinux.org',
+              'https://dusty.phillips.codes', 'https://itmaybeahack.com')
+
+    options = Options(username="dusty", password="Hunter2", debug=True)
+    pprint(options)
+    print(options['debug'])

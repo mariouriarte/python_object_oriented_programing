@@ -2,7 +2,7 @@ import math
 
 
 class Point:
-    '''Represent a two dimension coordinates'''
+    """Represent a two dimension coordinates"""
 
     def __init__(self, x: float, y: float) -> None:
         self.move(x, y)
