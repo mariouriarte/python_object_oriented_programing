@@ -2,6 +2,7 @@ from model.media_loader_abstract import MediaLoaderAbstract
 from typing import List
 import abc
 
+
 class Wav(MediaLoaderAbstract):
     pass
 
@@ -40,4 +41,3 @@ if __name__ == '__main__':
     print(dict1)
     dict1['x'] = 3
     print(dict1)
-    

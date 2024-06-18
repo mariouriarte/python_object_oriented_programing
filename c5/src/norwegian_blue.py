@@ -26,6 +26,7 @@ class NorwegianBlue_P:
     def age(self, age: int) -> None:
         self.age = age
 
+
 if __name__ == "__main__":
     x = NorwegianBlue_P('Mario')
     x.silly = 'Activo'

@@ -17,16 +17,17 @@ class MediaLoaderAbstract(abc.ABC):
         return 'Some thing'
 
 
-print(Container.__abstractmethods__)
-# help(Container.__contains__)
-
-
 class OddIntegers:
     def __contains__(self, x: int) -> bool:
         return x % 2 != 0
 
 
 if __name__ == '__main__':
+    print(Container.__abstractmethods__)
+    print(MediaLoaderAbstract.__abstractmethods__)
+    # help(Container.__contains__)
+    # help(MediaLoaderAbstract)
+
     odd = OddIntegers()
     print(isinstance(odd, Container))
     print(issubclass(OddIntegers, Container))
