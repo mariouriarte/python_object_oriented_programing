@@ -26,3 +26,5 @@ nd = NoDupDict()
 nd["a"] = 1
 # raise value error
 #nd["a"] = 2
+
+print(NoDupDict({"a": 42, "a": 3.14}))
