@@ -9,6 +9,7 @@ class Stock:
     high: float = 0.0
     low: float = 0.0
 
+
 class StockOrdinary:
     def __init__(self, name: str, current: float, high: float, low: float) -> None:
         self.name = name
@@ -31,6 +32,8 @@ s_ord = StockOrdinary("AAPL", 123.52, 137.98, 53.15)
 s_ord_2 = StockOrdinary("AAPL", 123.52, 137.98, 53.15)
 print(s_ord)
 print(s_ord == s_ord_2)
+
+
 # ----
 
 

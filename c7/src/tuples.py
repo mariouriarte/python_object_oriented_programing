@@ -22,9 +22,9 @@ pprint(tuple_1)
 pprint(list_1)
 
 
-def middle(stock, date):
-    symbol, current, high, low = stock
-    return (((high + low) / 2), date)
+def middle(stock_, date):
+    symbol, current, high, low = stock_
+    return ((high + low) / 2), date
 
 
 print(middle(stock2, datetime.date(2024, 12, 4)))
@@ -60,7 +60,7 @@ print(s2)
 print(f"high: {high(s2)}")
 print(hash(s2))
 print(f"middle: {s2.middle}")
-print('----')
+print('<---->')
 
 t = ("Relayer", ["Gates of Delirium", "Sound Chaser"])
 t[1].append("To Be Over")
@@ -68,3 +68,6 @@ print(t)
 # hash(t)
 
 # asd = {s2: 2}
+
+t2 = (2, 1, 3)
+print(hash(t2))
