@@ -1,5 +1,7 @@
 from typing import NamedTuple
 import datetime
+from pprint import pprint
+
 stock = "AAPL", 123.52, 53.15, 137.98
 stock2 = ("AAPL", 123.52, 53.15, 137.98)
 
@@ -9,6 +11,15 @@ print(stock[1:3])
 print('----')
 
 print(stock2)
+
+print("---- mutables in tuple")
+list_1 = [1, 2, 3, (1, 2, 3)]
+dict_1 = {1: "a", 2: "b"}
+tuple_1 = (list_1, dict_1)
+list_ref = tuple_1[0]
+list_ref[0] = 222
+pprint(tuple_1)
+pprint(list_1)
 
 
 def middle(stock, date):
@@ -41,7 +52,7 @@ class Stock(NamedTuple):
 
     @property
     def middle(self) -> float:
-        return (self.high + self.low)/2
+        return (self.high + self.low) / 2
 
 
 s2 = Stock("AAPL", 123.52, 137.98, 53.15)
