@@ -9,13 +9,16 @@ class Sample:
     petal_length: float
     petal_width: float
 
+
 @dataclass(frozen=True)
 class KnownSample(Sample):
     species: str
 
-@dataclass
+
+# @dataclass
 class TestingKnownSample(KnownSample):
     classification: Optional[str] = None
+
 
 @dataclass(frozen=True)
 class TrainingKnownSample(KnownSample):

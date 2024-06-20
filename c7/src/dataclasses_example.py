@@ -19,6 +19,8 @@ class StockOrdinary:
 
 
 s = Stock("AAPL", 123.52, 137.98, 53.15)
+s.unexpected_attribute = "allowed"
+
 s2 = Stock("AAPL", 123.52, 137.98, 53.15)
 print(s == s2)
 print(s)
