@@ -14,7 +14,10 @@ artists = set()
 for song, artist in song_library:
     artists.add(artist)
 
+print("Set:")
 pprint(artists)
+print(type(artists))
+print('----')
 print("Opeth" in artists)
 alphabetical = list(artists)
 alphabetical.sort()
@@ -25,3 +28,4 @@ artists2 = {"Guns N' Roses", 'Vixy and Tony', 'Sarah Brightman', 'Opeth'}
 bands = {"Opeth", "Guns N' Roses"}
 print(artists2.issuperset(bands))
 print(bands.issuperset(artists2))
+print(type(artists2))
