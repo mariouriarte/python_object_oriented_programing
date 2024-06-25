@@ -1,7 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
 from collections import defaultdict
-from typing import collections
 from pprint import pprint
 
 
@@ -33,9 +32,9 @@ class Prices:
     low: float = 0.0
 
 
-portfolio = collections.defaultdict(Prices)
-print(portfolio)
-print(portfolio["GOOG"])
-portfolio["AAPL"] = Prices(current=122.25, high=137.98, low=53.15)
-print(portfolio["AAPL"])
-pprint(portfolio)
+if __name__ == "__main__":
+    portfolio = defaultdict(Prices)
+    portfolio["GOOG"]
+    portfolio["asd"]
+    portfolio["AAPL"] = Prices(current=122.25, high=137.98, low=53.15)
+    pprint(portfolio)

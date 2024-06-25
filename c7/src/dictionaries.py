@@ -1,6 +1,5 @@
 from pprint import pprint
 
-
 x = {'a': 1, 'b': 2}
 print(x)
 
@@ -11,7 +10,9 @@ stocks = {
     "GOOG": (1235.20, 1242.54, 1231.06),
     "MSFT": (110.41, 110.45, 109.84),
 }
-stocks.setdefault("GOOG", "INVALID")
+stocks.setdefault("GOOG", None)
+stocks.setdefault("BB", (10.87, 10.76, 10.90))
+print(stocks["BB"])
 
 print(stocks.get("RIMM"))
 print(stocks.get("RIMM", "Not found"))
