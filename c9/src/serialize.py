@@ -11,3 +11,5 @@ with open("pickled_list", 'rb') as file:
     loaded_data = pickle.load(file)
 
 print(loaded_data)
+
+assert loaded_data == some_data
